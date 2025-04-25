@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{ url_for('index') }}">GudangApp</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('index') }}">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('distribusi') }}">Distribusi Barang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Jadwal Pengiriman</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profil Pengguna</a>
+          </li>
+        </ul>
+        <span class="navbar-text">
+          <a class="nav-link text-white" href="{{ url_for('logout') }}">Logout</a>
+        </span>
+      </div>
+    </div>
+  </nav>
+  
